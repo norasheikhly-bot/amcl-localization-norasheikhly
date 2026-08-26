@@ -1,0 +1,2 @@
+[console_scripts]
+delivery_mission_server = delivery_mission_controller.delivery_mission_server_node:main

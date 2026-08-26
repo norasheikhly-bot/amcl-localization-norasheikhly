@@ -1,0 +1,6 @@
+{
+  "package_name": "delivery_mission_interfaces",
+  "non_idl_tuples": [
+    "/root/workspaces/turtlebot_delivery_norasheikhly/src/delivery_mission_interfaces:action/DeliveryMission.action"
+  ]
+}

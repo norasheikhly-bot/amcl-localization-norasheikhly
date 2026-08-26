@@ -1,0 +1,228 @@
+[0.192s] Invoking command in '/root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller:/root/workspaces/install/obstacle_controller:/opt/ros/jazzy /usr/bin/cmake --build /root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_interfaces -- -j4 -l4
+[0.633s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.925s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.083s] -- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.152s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.264s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.335s] -- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[2.565s] -- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[3.933s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.795s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.809s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[6.036s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[7.117s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[7.307s] -- Added test 'lint_cmake' to check CMake code style
+[7.355s] -- Added test 'xmllint' to check XML markup files
+[7.830s] -- Configuring done (7.2s)
+[12.391s] -- Generating done (4.4s)
+[13.738s] -- Build files have been written to: /root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_interfaces
+[13.850s] [  5%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[13.865s] [  5%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[14.159s] [  5%] Built target delivery_mission_interfaces__rs
+[14.264s] [  5%] Built target delivery_mission_interfaces__rosidl_generator_type_description
+[14.308s] [  8%] [34m[1mGenerating C code for ROS interfaces[0m
+[14.330s] [ 11%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[14.345s] [ 11%] Built target ament_cmake_python_copy_delivery_mission_interfaces
+[14.600s] running egg_info
+[14.635s] writing delivery_mission_interfaces.egg-info/PKG-INFO
+[14.655s] writing dependency_links to delivery_mission_interfaces.egg-info/dependency_links.txt
+[14.677s] writing top-level names to delivery_mission_interfaces.egg-info/top_level.txt
+[14.780s] reading manifest file 'delivery_mission_interfaces.egg-info/SOURCES.txt'
+[14.795s] writing manifest file 'delivery_mission_interfaces.egg-info/SOURCES.txt'
+[14.822s] [ 11%] Built target delivery_mission_interfaces__cpp
+[14.839s] [ 11%] Built target ament_cmake_python_build_delivery_mission_interfaces_egg
+[15.134s] [ 20%] [32mBuilding C object CMakeFiles/delivery_mission_interfaces__rosidl_generator_c.dir/rosidl_generator_c/delivery_mission_interfaces/action/detail/delivery_mission__functions.c.o[0m
+[15.148s] [ 20%] [32mBuilding C object CMakeFiles/delivery_mission_interfaces__rosidl_generator_c.dir/rosidl_generator_c/delivery_mission_interfaces/action/detail/delivery_mission__description.c.o[0m
+[15.172s] [ 20%] [32mBuilding C object CMakeFiles/delivery_mission_interfaces__rosidl_generator_c.dir/rosidl_generator_c/delivery_mission_interfaces/action/detail/delivery_mission__type_support.c.o[0m
+[15.427s] [ 22%] [32m[1mLinking C shared library libdelivery_mission_interfaces__rosidl_generator_c.so[0m
+[15.741s] [ 22%] Built target delivery_mission_interfaces__rosidl_generator_c
+[15.798s] [ 34%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[15.799s] [ 34%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[15.799s] [ 34%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[15.812s] [ 34%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[16.279s] [ 37%] [32mBuilding CXX object CMakeFiles/delivery_mission_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/delivery_mission_interfaces/action/delivery_mission__type_support.cpp.o[0m
+[16.371s] [ 40%] [32mBuilding CXX object CMakeFiles/delivery_mission_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/delivery_mission_interfaces/action/detail/delivery_mission__type_support.cpp.o[0m
+[16.457s] [ 42%] [32mBuilding CXX object CMakeFiles/delivery_mission_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/delivery_mission_interfaces/action/detail/dds_fastrtps/delivery_mission__type_support.cpp.o[0m
+[16.536s] [ 45%] [32mBuilding CXX object CMakeFiles/delivery_mission_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/delivery_mission_interfaces/action/detail/delivery_mission__type_support_c.cpp.o[0m
+[17.397s] [ 48%] [32m[1mLinking CXX shared library libdelivery_mission_interfaces__rosidl_typesupport_cpp.so[0m
+[17.541s] [ 54%] [32m[1mLinking CXX shared library libdelivery_mission_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[17.542s] [ 54%] [32m[1mLinking CXX shared library libdelivery_mission_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[17.710s] [ 54%] Built target delivery_mission_interfaces__rosidl_typesupport_cpp
+[17.755s] [ 57%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[17.759s] [ 57%] Built target delivery_mission_interfaces__rosidl_typesupport_fastrtps_c
+[17.799s] [ 60%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[17.878s] [ 60%] Built target delivery_mission_interfaces__rosidl_typesupport_introspection_cpp
+[17.915s] [ 62%] [32m[1mLinking CXX shared library libdelivery_mission_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[18.111s] [ 65%] [32mBuilding CXX object CMakeFiles/delivery_mission_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/delivery_mission_interfaces/action/delivery_mission__type_support.cpp.o[0m
+[18.204s] [ 68%] [32mBuilding C object CMakeFiles/delivery_mission_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/delivery_mission_interfaces/action/detail/delivery_mission__type_support.c.o[0m
+[18.221s] [ 68%] Built target delivery_mission_interfaces__rosidl_typesupport_fastrtps_cpp
+[18.252s] [ 71%] [32m[1mLinking CXX shared library libdelivery_mission_interfaces__rosidl_typesupport_c.so[0m
+[18.435s] [ 74%] Built target delivery_mission_interfaces__rosidl_typesupport_c
+[18.444s] [ 74%] [32m[1mLinking C shared library libdelivery_mission_interfaces__rosidl_typesupport_introspection_c.so[0m
+[18.642s] [ 74%] Built target delivery_mission_interfaces__rosidl_typesupport_introspection_c
+[18.682s] [ 74%] Built target delivery_mission_interfaces
+[18.738s] [ 77%] [34m[1mGenerating Python code for ROS interfaces[0m
+[19.365s] [ 77%] Built target delivery_mission_interfaces__py
+[19.545s] [ 80%] [32mBuilding C object CMakeFiles/delivery_mission_interfaces__rosidl_generator_py.dir/rosidl_generator_py/delivery_mission_interfaces/action/_delivery_mission_s.c.o[0m
+[19.910s] [ 82%] [32m[1mLinking C shared library libdelivery_mission_interfaces__rosidl_generator_py.so[0m
+[20.085s] [ 82%] Built target delivery_mission_interfaces__rosidl_generator_py
+[20.206s] [ 91%] [32mBuilding C object CMakeFiles/delivery_mission_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/delivery_mission_interfaces/_delivery_mission_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[20.220s] [ 91%] [32mBuilding C object CMakeFiles/delivery_mission_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/delivery_mission_interfaces/_delivery_mission_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[20.230s] [ 91%] [32mBuilding C object CMakeFiles/delivery_mission_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/delivery_mission_interfaces/_delivery_mission_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[20.410s] [ 94%] [32m[1mLinking C shared module rosidl_generator_py/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_c.so[0m
+[20.444s] [100%] [32m[1mLinking C shared module rosidl_generator_py/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[20.458s] [100%] [32m[1mLinking C shared module rosidl_generator_py/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[20.540s] [100%] Built target delivery_mission_interfaces_s__rosidl_typesupport_c
+[20.587s] [100%] Built target delivery_mission_interfaces_s__rosidl_typesupport_introspection_c
+[20.631s] [100%] Built target delivery_mission_interfaces_s__rosidl_typesupport_fastrtps_c
+[20.840s] Invoked command in '/root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller:/root/workspaces/install/obstacle_controller:/opt/ros/jazzy /usr/bin/cmake --build /root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_interfaces -- -j4 -l4
+[20.879s] Invoking command in '/root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller:/root/workspaces/install/obstacle_controller:/opt/ros/jazzy /usr/bin/cmake --install /root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_interfaces
+[20.905s] -- Install configuration: ""
+[20.919s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/ament_index/resource_index/rosidl_interfaces/delivery_mission_interfaces
+[20.929s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/action/DeliveryMission.json
+[20.971s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces
+[20.983s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action
+[20.992s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail
+[21.003s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__description.c
+[21.084s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__functions.h
+[21.166s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__type_support.c
+[21.227s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__struct.h
+[21.283s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__functions.c
+[21.361s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__type_support.h
+[21.417s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/delivery_mission.h
+[21.472s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/msg
+[21.486s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/msg/rosidl_generator_c__visibility_control.h
+[21.495s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/environment/library_path.sh
+[21.509s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/environment/library_path.dsv
+[21.528s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_generator_c.so
+[21.608s] -- Set non-toolchain portion of runtime path of "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_generator_c.so" to ""
+[21.624s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces
+[21.642s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action
+[21.652s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail
+[21.652s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__rosidl_typesupport_fastrtps_c.h
+[21.705s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/msg
+[21.719s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[21.739s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_fastrtps_c.so
+[21.826s] -- Set non-toolchain portion of runtime path of "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[21.841s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces
+[21.860s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action
+[21.870s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail
+[21.870s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__type_support.c
+[21.932s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__rosidl_typesupport_introspection_c.h
+[21.986s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/msg
+[22.000s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[22.019s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_introspection_c.so
+[22.118s] -- Set non-toolchain portion of runtime path of "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[22.131s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_c.so
+[22.212s] -- Set non-toolchain portion of runtime path of "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_c.so" to ""
+[22.227s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces
+[22.246s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action
+[22.255s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail
+[22.255s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__builder.hpp
+[22.308s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__traits.hpp
+[22.374s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__struct.hpp
+[22.434s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__type_support.hpp
+[22.489s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/delivery_mission.hpp
+[22.548s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/msg
+[22.563s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[22.615s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces
+[22.630s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action
+[22.650s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail
+[22.655s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__rosidl_typesupport_fastrtps_cpp.hpp
+[22.703s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/dds_fastrtps
+[22.718s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/msg
+[22.732s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[22.764s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[22.885s] -- Set non-toolchain portion of runtime path of "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[22.900s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces
+[22.915s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action
+[22.920s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail
+[22.940s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__type_support.cpp
+[22.991s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__rosidl_typesupport_introspection_cpp.hpp
+[23.067s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_introspection_cpp.so
+[23.192s] -- Set non-toolchain portion of runtime path of "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[23.215s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_cpp.so
+[23.323s] -- Set non-toolchain portion of runtime path of "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_cpp.so" to ""
+[23.339s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/environment/pythonpath.sh
+[23.359s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/environment/pythonpath.dsv
+[23.364s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces-0.0.0-py3.12.egg-info
+[23.364s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces-0.0.0-py3.12.egg-info/top_level.txt
+[23.405s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt
+[23.458s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt
+[23.513s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces-0.0.0-py3.12.egg-info/PKG-INFO
+[23.565s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces
+[23.580s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/_delivery_mission_interfaces_s.ep.rosidl_typesupport_c.c
+[23.634s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/_delivery_mission_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[23.694s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/action
+[23.708s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/action/_delivery_mission.py
+[23.790s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/action/__init__.py
+[23.844s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/action/_delivery_mission_s.c
+[23.902s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/_delivery_mission_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[23.963s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_introspection_c.so
+[24.027s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_c.so
+[24.093s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[24.166s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/__init__.py
+[24.310s] Listing '/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces'...
+[24.311s] Listing '/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/action'...
+[24.311s] Compiling '/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/action/__init__.py'...
+[24.311s] Compiling '/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/action/_delivery_mission.py'...
+[24.335s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[24.413s] -- Set non-toolchain portion of runtime path of "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""
+[24.441s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_introspection_c.so
+[24.523s] -- Set non-toolchain portion of runtime path of "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_introspection_c.so" to ""
+[24.551s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_c.so
+[24.634s] -- Set non-toolchain portion of runtime path of "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_c.so" to ""
+[24.652s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_generator_py.so
+[24.734s] -- Set non-toolchain portion of runtime path of "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_generator_py.so" to ""
+[24.750s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/ament_index/resource_index/rust_packages/delivery_mission_interfaces
+[24.784s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/rust
+[24.803s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/rust/src
+[24.803s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/rust/src/lib.rs
+[24.843s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/rust/src/action
+[24.870s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/rust/src/action/rmw.rs
+[24.950s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/rust/src/action.rs
+[25.035s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/rust/Cargo.toml
+[25.112s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/rust/build.rs
+[25.180s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/action/DeliveryMission.idl
+[25.268s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/action/DeliveryMission.action
+[25.339s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/ament_index/resource_index/package_run_dependencies/delivery_mission_interfaces
+[25.367s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/ament_index/resource_index/parent_prefix_path/delivery_mission_interfaces
+[25.419s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/environment/ament_prefix_path.sh
+[25.431s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/environment/ament_prefix_path.dsv
+[25.485s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/environment/path.sh
+[25.533s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/environment/path.dsv
+[25.599s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/local_setup.bash
+[25.635s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/local_setup.sh
+[25.644s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/local_setup.zsh
+[25.649s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/local_setup.dsv
+[25.669s] -- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/package.dsv
+[25.675s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/ament_index/resource_index/packages/delivery_mission_interfaces
+[25.705s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/export_delivery_mission_interfaces__rosidl_generator_cExport.cmake
+[25.705s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/export_delivery_mission_interfaces__rosidl_generator_cExport-noconfig.cmake
+[25.705s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/export_delivery_mission_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[25.717s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/export_delivery_mission_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[25.775s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/delivery_mission_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[25.811s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/delivery_mission_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[25.844s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/delivery_mission_interfaces__rosidl_typesupport_cExport.cmake
+[25.897s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/delivery_mission_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[25.897s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/export_delivery_mission_interfaces__rosidl_generator_cppExport.cmake
+[25.931s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/export_delivery_mission_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[25.974s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/export_delivery_mission_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[26.003s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/delivery_mission_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[26.034s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/delivery_mission_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[26.042s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/delivery_mission_interfaces__rosidl_typesupport_cppExport.cmake
+[26.042s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/delivery_mission_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[26.049s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/export_delivery_mission_interfaces__rosidl_generator_pyExport.cmake
+[26.049s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/export_delivery_mission_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[26.084s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/rosidl_cmake-extras.cmake
+[26.084s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[26.124s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[26.154s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[26.189s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[26.217s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[26.245s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[26.255s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[26.283s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/delivery_mission_interfacesConfig.cmake
+[26.289s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/delivery_mission_interfacesConfig-version.cmake
+[26.289s] -- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/package.xml
+[26.289s] Invoked command in '/root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller:/root/workspaces/install/obstacle_controller:/opt/ros/jazzy /usr/bin/cmake --install /root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_interfaces

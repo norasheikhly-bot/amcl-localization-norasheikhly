@@ -1,0 +1,42 @@
+[1.372s] Invoking command in '/root/workspaces/turtlebot_delivery_norasheikhly/src/delivery_mission_controller': AMENT_PREFIX_PATH=/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller/lib/python3.12/site-packages:/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/delivery_mission_controller build --build-base /root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_controller/build install --record /root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_controller/install.log --install-scripts $base/lib/delivery_mission_controller --single-version-externally-managed install_data
+[1.651s] running egg_info
+[1.682s] creating ../../build/delivery_mission_controller/delivery_mission_controller.egg-info
+[1.705s] writing ../../build/delivery_mission_controller/delivery_mission_controller.egg-info/PKG-INFO
+[1.723s] writing dependency_links to ../../build/delivery_mission_controller/delivery_mission_controller.egg-info/dependency_links.txt
+[1.732s] writing entry points to ../../build/delivery_mission_controller/delivery_mission_controller.egg-info/entry_points.txt
+[1.745s] writing requirements to ../../build/delivery_mission_controller/delivery_mission_controller.egg-info/requires.txt
+[1.764s] writing top-level names to ../../build/delivery_mission_controller/delivery_mission_controller.egg-info/top_level.txt
+[1.784s] writing manifest file '../../build/delivery_mission_controller/delivery_mission_controller.egg-info/SOURCES.txt'
+[1.845s] reading manifest file '../../build/delivery_mission_controller/delivery_mission_controller.egg-info/SOURCES.txt'
+[1.863s] writing manifest file '../../build/delivery_mission_controller/delivery_mission_controller.egg-info/SOURCES.txt'
+[1.880s] running build
+[1.885s] running build_py
+[1.885s] creating /root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_controller/build
+[1.885s] creating /root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_controller/build/lib
+[1.885s] creating /root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_controller/build/lib/delivery_mission_controller
+[1.886s] copying delivery_mission_controller/__init__.py -> /root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_controller/build/lib/delivery_mission_controller
+[1.904s] copying delivery_mission_controller/delivery_mission_server_node.py -> /root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_controller/build/lib/delivery_mission_controller
+[1.930s] running install
+[1.943s] running install_lib
+[1.973s] creating /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller/lib/python3.12/site-packages/delivery_mission_controller
+[1.986s] copying /root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_controller/build/lib/delivery_mission_controller/__init__.py -> /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller/lib/python3.12/site-packages/delivery_mission_controller
+[2.006s] copying /root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_controller/build/lib/delivery_mission_controller/delivery_mission_server_node.py -> /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller/lib/python3.12/site-packages/delivery_mission_controller
+[2.028s] byte-compiling /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller/lib/python3.12/site-packages/delivery_mission_controller/__init__.py to __init__.cpython-312.pyc
+[2.052s] byte-compiling /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller/lib/python3.12/site-packages/delivery_mission_controller/delivery_mission_server_node.py to delivery_mission_server_node.cpython-312.pyc
+[2.059s]   File "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller/lib/python3.12/site-packages/delivery_mission_controller/delivery_mission_server_node.py", line 139
+[2.059s]     else:
+[2.059s]     ^^^^
+[2.059s] SyntaxError: invalid syntax
+[2.059s] 
+[2.065s] running install_data
+[2.075s] creating /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller/share/ament_index
+[2.076s] creating /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller/share/ament_index/resource_index
+[2.076s] creating /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller/share/ament_index/resource_index/packages
+[2.084s] copying resource/delivery_mission_controller -> /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller/share/ament_index/resource_index/packages
+[2.096s] copying package.xml -> /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller/share/delivery_mission_controller
+[2.117s] running install_egg_info
+[2.148s] Copying ../../build/delivery_mission_controller/delivery_mission_controller.egg-info to /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller/lib/python3.12/site-packages/delivery_mission_controller-0.0.0-py3.12.egg-info
+[2.331s] running install_scripts
+[2.520s] Installing delivery_mission_server script to /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller/lib/delivery_mission_controller
+[2.538s] writing list of installed files to '/root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_controller/install.log'
+[2.580s] Invoked command in '/root/workspaces/turtlebot_delivery_norasheikhly/src/delivery_mission_controller' returned '0': AMENT_PREFIX_PATH=/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller/lib/python3.12/site-packages:/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/delivery_mission_controller build --build-base /root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_controller/build install --record /root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_controller/install.log --install-scripts $base/lib/delivery_mission_controller --single-version-externally-managed install_data

@@ -1,0 +1,11 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/delivery_mission_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/delivery_mission_interfaces/_delivery_mission_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o"
+  "CMakeFiles/delivery_mission_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/delivery_mission_interfaces/_delivery_mission_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o.d"
+  "rosidl_generator_py/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_fastrtps_c.pdb"
+  "rosidl_generator_py/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_fastrtps_c.so"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/delivery_mission_interfaces_s__rosidl_typesupport_fastrtps_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

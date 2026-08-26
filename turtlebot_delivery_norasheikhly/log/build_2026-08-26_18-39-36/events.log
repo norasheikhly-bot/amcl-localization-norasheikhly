@@ -1,0 +1,503 @@
+[0.000000] (-) TimerEvent: {}
+[0.000136] (-) JobUnselected: {'identifier': 'delivery_mission_controller'}
+[0.000164] (delivery_mission_interfaces) JobQueued: {'identifier': 'delivery_mission_interfaces', 'dependencies': OrderedDict()}
+[0.000182] (delivery_mission_interfaces) JobStarted: {'identifier': 'delivery_mission_interfaces'}
+[0.089088] (-) TimerEvent: {}
+[0.102678] (delivery_mission_interfaces) JobProgress: {'identifier': 'delivery_mission_interfaces', 'progress': 'cmake'}
+[0.137122] (delivery_mission_interfaces) JobProgress: {'identifier': 'delivery_mission_interfaces', 'progress': 'build'}
+[0.141194] (delivery_mission_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_interfaces', '--', '-j4', '-l4'], 'cwd': '/root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'ACTIVE_WS_PATH': '/root/workspaces/turtlebot_ws', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'SUPERVISOR_GROUP_NAME': 'ttyd', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'ip-172-31-34-38.eu-central-1.compute.internal', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib:/root/workspaces/install/obstacle_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'EFS_PATH': '/workspaces/418c5e1a-e2d6-40f2-9177-20895be599f5', 'OLDPWD': '/root/workspaces', 'ROS_PYTHON_VERSION': '3', 'AWS_CONTAINER_CREDENTIALS_RELATIVE_URI': '/v2/credentials/9ca593cf-d657-4342-aae4-1c118fe913d3', 'AWS_EXECUTION_ENV': 'AWS_ECS_FARGATE', 'COLCON_PREFIX_PATH': '/root/workspaces/turtlebot_delivery_norasheikhly/install:/root/workspaces/install:/root/workspaces/turtlebot_ws/install', 'ECS_AGENT_URI': 'http://169.254.170.2/api/39e72e406d6d41e5b103f4fc0c1e16a3-1842134484', 'ROS_DISTRO': 'jazzy', 'AWS_DEFAULT_REGION': 'eu-central-1', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'ECS_CONTAINER_METADATA_URI_V4': 'http://169.254.170.2/v4/39e72e406d6d41e5b103f4fc0c1e16a3-1842134484', 'TERM': 'xterm-256color', 'ECS_CONTAINER_METADATA_URI': 'http://169.254.170.2/v3/39e72e406d6d41e5b103f4fc0c1e16a3-1842134484', 'SESSION_UUID': '418c5e1a-e2d6-40f2-9177-20895be599f5', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/tmp/runtime-root', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SUPERVISOR_ENABLED': '1', 'ROS_DOMAIN_ID': '30', 'AMENT_PREFIX_PATH': '/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller:/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces:/root/workspaces/install/obstacle_controller:/root/workspaces/install/obstacle_interfaces:/root/workspaces/turtlebot_ws/install/warehouse_world:/root/workspaces/turtlebot_ws/install/turtlebot3_simulations:/root/workspaces/turtlebot_ws/install/turtlebot3_gazebo:/root/workspaces/turtlebot_ws/install/turtlebot3_fake_node:/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'ACTIVE_WS_NAME': 'turtlebot_ws', 'AWS_REGION': 'eu-central-1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SUPERVISOR_SERVER_URL': 'unix:///var/run/supervisor.sock', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'SUPERVISOR_PROCESS_NAME': 'ttyd', 'PWD': '/root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_interfaces', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller/lib/python3.12/site-packages:/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages:/root/workspaces/install/obstacle_controller/lib/python3.12/site-packages:/root/workspaces/install/obstacle_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces:/root/workspaces/install/obstacle_interfaces:/root/workspaces/turtlebot_ws/install/warehouse_world:/root/workspaces/turtlebot_ws/install/turtlebot3_simulations:/root/workspaces/turtlebot_ws/install/turtlebot3_gazebo:/root/workspaces/turtlebot_ws/install/turtlebot3_fake_node:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller:/root/workspaces/install/obstacle_controller:/opt/ros/jazzy'}), 'shell': False}
+[0.192041] (-) TimerEvent: {}
+[0.292263] (-) TimerEvent: {}
+[0.392563] (-) TimerEvent: {}
+[0.492863] (-) TimerEvent: {}
+[0.593170] (-) TimerEvent: {}
+[0.633455] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.693431] (-) TimerEvent: {}
+[0.793725] (-) TimerEvent: {}
+[0.894003] (-) TimerEvent: {}
+[0.924764] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[0.994183] (-) TimerEvent: {}
+[1.082612] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[1.094281] (-) TimerEvent: {}
+[1.151891] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.194416] (-) TimerEvent: {}
+[1.264127] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.294527] (-) TimerEvent: {}
+[1.334552] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[1.394637] (-) TimerEvent: {}
+[1.494899] (-) TimerEvent: {}
+[1.595185] (-) TimerEvent: {}
+[1.695461] (-) TimerEvent: {}
+[1.795729] (-) TimerEvent: {}
+[1.895978] (-) TimerEvent: {}
+[1.996266] (-) TimerEvent: {}
+[2.096553] (-) TimerEvent: {}
+[2.196828] (-) TimerEvent: {}
+[2.297106] (-) TimerEvent: {}
+[2.397414] (-) TimerEvent: {}
+[2.497693] (-) TimerEvent: {}
+[2.564919] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[2.597799] (-) TimerEvent: {}
+[2.698074] (-) TimerEvent: {}
+[2.798348] (-) TimerEvent: {}
+[2.898631] (-) TimerEvent: {}
+[2.999026] (-) TimerEvent: {}
+[3.099321] (-) TimerEvent: {}
+[3.199629] (-) TimerEvent: {}
+[3.299919] (-) TimerEvent: {}
+[3.400193] (-) TimerEvent: {}
+[3.500490] (-) TimerEvent: {}
+[3.600799] (-) TimerEvent: {}
+[3.701101] (-) TimerEvent: {}
+[3.801383] (-) TimerEvent: {}
+[3.901691] (-) TimerEvent: {}
+[3.933541] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.001791] (-) TimerEvent: {}
+[4.102067] (-) TimerEvent: {}
+[4.202412] (-) TimerEvent: {}
+[4.302706] (-) TimerEvent: {}
+[4.402975] (-) TimerEvent: {}
+[4.503383] (-) TimerEvent: {}
+[4.603693] (-) TimerEvent: {}
+[4.703970] (-) TimerEvent: {}
+[4.804241] (-) TimerEvent: {}
+[4.904546] (-) TimerEvent: {}
+[5.004810] (-) TimerEvent: {}
+[5.105060] (-) TimerEvent: {}
+[5.205337] (-) TimerEvent: {}
+[5.305591] (-) TimerEvent: {}
+[5.405858] (-) TimerEvent: {}
+[5.506108] (-) TimerEvent: {}
+[5.606385] (-) TimerEvent: {}
+[5.706678] (-) TimerEvent: {}
+[5.795051] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.800417] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[5.813311] (-) TimerEvent: {}
+[5.918006] (-) TimerEvent: {}
+[6.018424] (-) TimerEvent: {}
+[6.036266] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[6.118534] (-) TimerEvent: {}
+[6.218801] (-) TimerEvent: {}
+[6.319099] (-) TimerEvent: {}
+[6.419537] (-) TimerEvent: {}
+[6.519846] (-) TimerEvent: {}
+[6.620124] (-) TimerEvent: {}
+[6.720406] (-) TimerEvent: {}
+[6.820689] (-) TimerEvent: {}
+[6.920973] (-) TimerEvent: {}
+[7.021257] (-) TimerEvent: {}
+[7.117526] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[7.121339] (-) TimerEvent: {}
+[7.223377] (-) TimerEvent: {}
+[7.307249] (delivery_mission_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.323472] (-) TimerEvent: {}
+[7.355463] (delivery_mission_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.423593] (-) TimerEvent: {}
+[7.523880] (-) TimerEvent: {}
+[7.624156] (-) TimerEvent: {}
+[7.724432] (-) TimerEvent: {}
+[7.824729] (-) TimerEvent: {}
+[7.827723] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Configuring done (7.2s)\n'}
+[7.924839] (-) TimerEvent: {}
+[8.025138] (-) TimerEvent: {}
+[8.125459] (-) TimerEvent: {}
+[8.225738] (-) TimerEvent: {}
+[8.326030] (-) TimerEvent: {}
+[8.426310] (-) TimerEvent: {}
+[8.526636] (-) TimerEvent: {}
+[8.626915] (-) TimerEvent: {}
+[8.727192] (-) TimerEvent: {}
+[8.827468] (-) TimerEvent: {}
+[8.927694] (-) TimerEvent: {}
+[9.028000] (-) TimerEvent: {}
+[9.128271] (-) TimerEvent: {}
+[9.228714] (-) TimerEvent: {}
+[9.329013] (-) TimerEvent: {}
+[9.429290] (-) TimerEvent: {}
+[9.529561] (-) TimerEvent: {}
+[9.629826] (-) TimerEvent: {}
+[9.730099] (-) TimerEvent: {}
+[9.830356] (-) TimerEvent: {}
+[9.930650] (-) TimerEvent: {}
+[10.031029] (-) TimerEvent: {}
+[10.131339] (-) TimerEvent: {}
+[10.231630] (-) TimerEvent: {}
+[10.331915] (-) TimerEvent: {}
+[10.432201] (-) TimerEvent: {}
+[10.532496] (-) TimerEvent: {}
+[10.632883] (-) TimerEvent: {}
+[10.733208] (-) TimerEvent: {}
+[10.833470] (-) TimerEvent: {}
+[10.933749] (-) TimerEvent: {}
+[11.034032] (-) TimerEvent: {}
+[11.134329] (-) TimerEvent: {}
+[11.234652] (-) TimerEvent: {}
+[11.334935] (-) TimerEvent: {}
+[11.435246] (-) TimerEvent: {}
+[11.535557] (-) TimerEvent: {}
+[11.635836] (-) TimerEvent: {}
+[11.736249] (-) TimerEvent: {}
+[11.836598] (-) TimerEvent: {}
+[11.936895] (-) TimerEvent: {}
+[12.037167] (-) TimerEvent: {}
+[12.137444] (-) TimerEvent: {}
+[12.237717] (-) TimerEvent: {}
+[12.337998] (-) TimerEvent: {}
+[12.390702] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Generating done (4.4s)\n'}
+[12.438107] (-) TimerEvent: {}
+[12.538375] (-) TimerEvent: {}
+[12.638638] (-) TimerEvent: {}
+[12.738910] (-) TimerEvent: {}
+[12.839282] (-) TimerEvent: {}
+[12.939594] (-) TimerEvent: {}
+[13.039937] (-) TimerEvent: {}
+[13.140229] (-) TimerEvent: {}
+[13.240543] (-) TimerEvent: {}
+[13.340865] (-) TimerEvent: {}
+[13.441155] (-) TimerEvent: {}
+[13.541438] (-) TimerEvent: {}
+[13.641732] (-) TimerEvent: {}
+[13.738250] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_interfaces\n'}
+[13.741800] (-) TimerEvent: {}
+[13.843093] (-) TimerEvent: {}
+[13.847333] (delivery_mission_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[13.850238] (delivery_mission_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[13.943195] (-) TimerEvent: {}
+[14.043502] (-) TimerEvent: {}
+[14.143775] (-) TimerEvent: {}
+[14.159458] (delivery_mission_interfaces) StdoutLine: {'line': b'[  5%] Built target delivery_mission_interfaces__rs\n'}
+[14.243904] (-) TimerEvent: {}
+[14.264322] (delivery_mission_interfaces) StdoutLine: {'line': b'[  5%] Built target delivery_mission_interfaces__rosidl_generator_type_description\n'}
+[14.307868] (delivery_mission_interfaces) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[14.330088] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[14.331062] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 11%] Built target ament_cmake_python_copy_delivery_mission_interfaces\n'}
+[14.349908] (-) TimerEvent: {}
+[14.454752] (-) TimerEvent: {}
+[14.555207] (-) TimerEvent: {}
+[14.600054] (delivery_mission_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[14.634871] (delivery_mission_interfaces) StdoutLine: {'line': b'writing delivery_mission_interfaces.egg-info/PKG-INFO\n'}
+[14.655306] (-) TimerEvent: {}
+[14.655519] (delivery_mission_interfaces) StdoutLine: {'line': b'writing dependency_links to delivery_mission_interfaces.egg-info/dependency_links.txt\n'}
+[14.677523] (delivery_mission_interfaces) StdoutLine: {'line': b'writing top-level names to delivery_mission_interfaces.egg-info/top_level.txt\n'}
+[14.755423] (-) TimerEvent: {}
+[14.780076] (delivery_mission_interfaces) StdoutLine: {'line': b"reading manifest file 'delivery_mission_interfaces.egg-info/SOURCES.txt'\n"}
+[14.789828] (delivery_mission_interfaces) StdoutLine: {'line': b"writing manifest file 'delivery_mission_interfaces.egg-info/SOURCES.txt'\n"}
+[14.822574] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 11%] Built target delivery_mission_interfaces__cpp\n'}
+[14.834549] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 11%] Built target ament_cmake_python_build_delivery_mission_interfaces_egg\n'}
+[14.855506] (-) TimerEvent: {}
+[14.955739] (-) TimerEvent: {}
+[15.056023] (-) TimerEvent: {}
+[15.133768] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/delivery_mission_interfaces__rosidl_generator_c.dir/rosidl_generator_c/delivery_mission_interfaces/action/detail/delivery_mission__functions.c.o\x1b[0m\n'}
+[15.134047] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/delivery_mission_interfaces__rosidl_generator_c.dir/rosidl_generator_c/delivery_mission_interfaces/action/detail/delivery_mission__description.c.o\x1b[0m\n'}
+[15.158732] (-) TimerEvent: {}
+[15.163691] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/delivery_mission_interfaces__rosidl_generator_c.dir/rosidl_generator_c/delivery_mission_interfaces/action/detail/delivery_mission__type_support.c.o\x1b[0m\n'}
+[15.258882] (-) TimerEvent: {}
+[15.359310] (-) TimerEvent: {}
+[15.427310] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libdelivery_mission_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[15.459549] (-) TimerEvent: {}
+[15.559859] (-) TimerEvent: {}
+[15.660327] (-) TimerEvent: {}
+[15.740748] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 22%] Built target delivery_mission_interfaces__rosidl_generator_c\n'}
+[15.760437] (-) TimerEvent: {}
+[15.798481] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[15.798719] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[15.798798] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[15.799114] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[15.860545] (-) TimerEvent: {}
+[15.960826] (-) TimerEvent: {}
+[16.061116] (-) TimerEvent: {}
+[16.161359] (-) TimerEvent: {}
+[16.261641] (-) TimerEvent: {}
+[16.279363] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/delivery_mission_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/delivery_mission_interfaces/action/delivery_mission__type_support.cpp.o\x1b[0m\n'}
+[16.361751] (-) TimerEvent: {}
+[16.371044] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/delivery_mission_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/delivery_mission_interfaces/action/detail/delivery_mission__type_support.cpp.o\x1b[0m\n'}
+[16.456766] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/delivery_mission_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/delivery_mission_interfaces/action/detail/dds_fastrtps/delivery_mission__type_support.cpp.o\x1b[0m\n'}
+[16.461844] (-) TimerEvent: {}
+[16.536492] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/delivery_mission_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/delivery_mission_interfaces/action/detail/delivery_mission__type_support_c.cpp.o\x1b[0m\n'}
+[16.561967] (-) TimerEvent: {}
+[16.662274] (-) TimerEvent: {}
+[16.762667] (-) TimerEvent: {}
+[16.863016] (-) TimerEvent: {}
+[16.963370] (-) TimerEvent: {}
+[17.063722] (-) TimerEvent: {}
+[17.164251] (-) TimerEvent: {}
+[17.264586] (-) TimerEvent: {}
+[17.364913] (-) TimerEvent: {}
+[17.396497] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libdelivery_mission_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[17.465042] (-) TimerEvent: {}
+[17.540794] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libdelivery_mission_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[17.542160] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libdelivery_mission_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[17.565162] (-) TimerEvent: {}
+[17.665631] (-) TimerEvent: {}
+[17.709815] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 54%] Built target delivery_mission_interfaces__rosidl_typesupport_cpp\n'}
+[17.754888] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[17.759390] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 57%] Built target delivery_mission_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[17.765714] (-) TimerEvent: {}
+[17.799469] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[17.865822] (-) TimerEvent: {}
+[17.878278] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 60%] Built target delivery_mission_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[17.914645] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library libdelivery_mission_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[17.965925] (-) TimerEvent: {}
+[18.066291] (-) TimerEvent: {}
+[18.110928] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/delivery_mission_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/delivery_mission_interfaces/action/delivery_mission__type_support.cpp.o\x1b[0m\n'}
+[18.166441] (-) TimerEvent: {}
+[18.204452] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding C object CMakeFiles/delivery_mission_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/delivery_mission_interfaces/action/detail/delivery_mission__type_support.c.o\x1b[0m\n'}
+[18.221506] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 68%] Built target delivery_mission_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[18.252158] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libdelivery_mission_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[18.266533] (-) TimerEvent: {}
+[18.366787] (-) TimerEvent: {}
+[18.435304] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 74%] Built target delivery_mission_interfaces__rosidl_typesupport_c\n'}
+[18.435582] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking C shared library libdelivery_mission_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[18.466897] (-) TimerEvent: {}
+[18.567166] (-) TimerEvent: {}
+[18.642021] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 74%] Built target delivery_mission_interfaces__rosidl_typesupport_introspection_c\n'}
+[18.667271] (-) TimerEvent: {}
+[18.682103] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 74%] Built target delivery_mission_interfaces\n'}
+[18.738127] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[18.767387] (-) TimerEvent: {}
+[18.867709] (-) TimerEvent: {}
+[18.967989] (-) TimerEvent: {}
+[19.068403] (-) TimerEvent: {}
+[19.168714] (-) TimerEvent: {}
+[19.269011] (-) TimerEvent: {}
+[19.365484] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 77%] Built target delivery_mission_interfaces__py\n'}
+[19.369100] (-) TimerEvent: {}
+[19.470795] (-) TimerEvent: {}
+[19.545312] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/delivery_mission_interfaces__rosidl_generator_py.dir/rosidl_generator_py/delivery_mission_interfaces/action/_delivery_mission_s.c.o\x1b[0m\n'}
+[19.570905] (-) TimerEvent: {}
+[19.671159] (-) TimerEvent: {}
+[19.771432] (-) TimerEvent: {}
+[19.871705] (-) TimerEvent: {}
+[19.910160] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking C shared library libdelivery_mission_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[19.971802] (-) TimerEvent: {}
+[20.072042] (-) TimerEvent: {}
+[20.084543] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 82%] Built target delivery_mission_interfaces__rosidl_generator_py\n'}
+[20.172157] (-) TimerEvent: {}
+[20.206023] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/delivery_mission_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/delivery_mission_interfaces/_delivery_mission_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[20.206237] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/delivery_mission_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/delivery_mission_interfaces/_delivery_mission_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[20.224973] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/delivery_mission_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/delivery_mission_interfaces/_delivery_mission_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[20.272271] (-) TimerEvent: {}
+[20.372608] (-) TimerEvent: {}
+[20.409921] (delivery_mission_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[20.443477] (delivery_mission_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[20.444849] (delivery_mission_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[20.472677] (-) TimerEvent: {}
+[20.540396] (delivery_mission_interfaces) StdoutLine: {'line': b'[100%] Built target delivery_mission_interfaces_s__rosidl_typesupport_c\n'}
+[20.572796] (-) TimerEvent: {}
+[20.587299] (delivery_mission_interfaces) StdoutLine: {'line': b'[100%] Built target delivery_mission_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[20.630553] (delivery_mission_interfaces) StdoutLine: {'line': b'[100%] Built target delivery_mission_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[20.672973] (-) TimerEvent: {}
+[20.773340] (-) TimerEvent: {}
+[20.840524] (delivery_mission_interfaces) CommandEnded: {'returncode': 0}
+[20.852811] (delivery_mission_interfaces) JobProgress: {'identifier': 'delivery_mission_interfaces', 'progress': 'install'}
+[20.873433] (-) TimerEvent: {}
+[20.873919] (delivery_mission_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_interfaces'], 'cwd': '/root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'ACTIVE_WS_PATH': '/root/workspaces/turtlebot_ws', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'SUPERVISOR_GROUP_NAME': 'ttyd', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'ip-172-31-34-38.eu-central-1.compute.internal', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib:/root/workspaces/install/obstacle_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'EFS_PATH': '/workspaces/418c5e1a-e2d6-40f2-9177-20895be599f5', 'OLDPWD': '/root/workspaces', 'ROS_PYTHON_VERSION': '3', 'AWS_CONTAINER_CREDENTIALS_RELATIVE_URI': '/v2/credentials/9ca593cf-d657-4342-aae4-1c118fe913d3', 'AWS_EXECUTION_ENV': 'AWS_ECS_FARGATE', 'COLCON_PREFIX_PATH': '/root/workspaces/turtlebot_delivery_norasheikhly/install:/root/workspaces/install:/root/workspaces/turtlebot_ws/install', 'ECS_AGENT_URI': 'http://169.254.170.2/api/39e72e406d6d41e5b103f4fc0c1e16a3-1842134484', 'ROS_DISTRO': 'jazzy', 'AWS_DEFAULT_REGION': 'eu-central-1', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'ECS_CONTAINER_METADATA_URI_V4': 'http://169.254.170.2/v4/39e72e406d6d41e5b103f4fc0c1e16a3-1842134484', 'TERM': 'xterm-256color', 'ECS_CONTAINER_METADATA_URI': 'http://169.254.170.2/v3/39e72e406d6d41e5b103f4fc0c1e16a3-1842134484', 'SESSION_UUID': '418c5e1a-e2d6-40f2-9177-20895be599f5', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/tmp/runtime-root', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SUPERVISOR_ENABLED': '1', 'ROS_DOMAIN_ID': '30', 'AMENT_PREFIX_PATH': '/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller:/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces:/root/workspaces/install/obstacle_controller:/root/workspaces/install/obstacle_interfaces:/root/workspaces/turtlebot_ws/install/warehouse_world:/root/workspaces/turtlebot_ws/install/turtlebot3_simulations:/root/workspaces/turtlebot_ws/install/turtlebot3_gazebo:/root/workspaces/turtlebot_ws/install/turtlebot3_fake_node:/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'ACTIVE_WS_NAME': 'turtlebot_ws', 'AWS_REGION': 'eu-central-1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SUPERVISOR_SERVER_URL': 'unix:///var/run/supervisor.sock', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'SUPERVISOR_PROCESS_NAME': 'ttyd', 'PWD': '/root/workspaces/turtlebot_delivery_norasheikhly/build/delivery_mission_interfaces', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller/lib/python3.12/site-packages:/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages:/root/workspaces/install/obstacle_controller/lib/python3.12/site-packages:/root/workspaces/install/obstacle_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces:/root/workspaces/install/obstacle_interfaces:/root/workspaces/turtlebot_ws/install/warehouse_world:/root/workspaces/turtlebot_ws/install/turtlebot3_simulations:/root/workspaces/turtlebot_ws/install/turtlebot3_gazebo:/root/workspaces/turtlebot_ws/install/turtlebot3_fake_node:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller:/root/workspaces/install/obstacle_controller:/opt/ros/jazzy'}), 'shell': False}
+[20.904692] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.908379] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/ament_index/resource_index/rosidl_interfaces/delivery_mission_interfaces\n'}
+[20.924123] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/action/DeliveryMission.json\n'}
+[20.971034] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces\n'}
+[20.973494] (-) TimerEvent: {}
+[20.980533] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action\n'}
+[20.990409] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail\n'}
+[21.000097] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__description.c\n'}
+[21.073655] (-) TimerEvent: {}
+[21.084368] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__functions.h\n'}
+[21.165858] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__type_support.c\n'}
+[21.173736] (-) TimerEvent: {}
+[21.227249] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__struct.h\n'}
+[21.273865] (-) TimerEvent: {}
+[21.283135] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__functions.c\n'}
+[21.361152] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__type_support.h\n'}
+[21.373969] (-) TimerEvent: {}
+[21.416820] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/delivery_mission.h\n'}
+[21.471723] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/msg\n'}
+[21.474026] (-) TimerEvent: {}
+[21.483521] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[21.490730] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/environment/library_path.sh\n'}
+[21.497506] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/environment/library_path.dsv\n'}
+[21.514453] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_generator_c.so\n'}
+[21.574163] (-) TimerEvent: {}
+[21.608009] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_generator_c.so" to ""\n'}
+[21.612319] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces\n'}
+[21.628339] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action\n'}
+[21.647190] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail\n'}
+[21.652283] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__rosidl_typesupport_fastrtps_c.h\n'}
+[21.674253] (-) TimerEvent: {}
+[21.704775] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/msg\n'}
+[21.717925] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[21.727919] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[21.774375] (-) TimerEvent: {}
+[21.825774] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[21.830875] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces\n'}
+[21.845895] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action\n'}
+[21.864979] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail\n'}
+[21.870132] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__type_support.c\n'}
+[21.874429] (-) TimerEvent: {}
+[21.931598] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__rosidl_typesupport_introspection_c.h\n'}
+[21.974560] (-) TimerEvent: {}
+[21.985729] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/msg\n'}
+[21.998315] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[22.008282] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[22.074677] (-) TimerEvent: {}
+[22.118003] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[22.128023] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_c.so\n'}
+[22.174789] (-) TimerEvent: {}
+[22.212156] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[22.216954] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces\n'}
+[22.231237] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action\n'}
+[22.250551] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail\n'}
+[22.255181] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__builder.hpp\n'}
+[22.274890] (-) TimerEvent: {}
+[22.307889] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__traits.hpp\n'}
+[22.374311] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__struct.hpp\n'}
+[22.374951] (-) TimerEvent: {}
+[22.433676] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__type_support.hpp\n'}
+[22.475062] (-) TimerEvent: {}
+[22.488599] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/delivery_mission.hpp\n'}
+[22.547702] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/msg\n'}
+[22.562720] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[22.575152] (-) TimerEvent: {}
+[22.615432] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces\n'}
+[22.626116] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action\n'}
+[22.635663] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail\n'}
+[22.655567] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[22.675268] (-) TimerEvent: {}
+[22.703027] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/dds_fastrtps\n'}
+[22.712986] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/msg\n'}
+[22.725091] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[22.751740] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[22.775348] (-) TimerEvent: {}
+[22.875577] (-) TimerEvent: {}
+[22.880605] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[22.885409] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces\n'}
+[22.905577] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action\n'}
+[22.915214] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail\n'}
+[22.924832] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__type_support.cpp\n'}
+[22.975679] (-) TimerEvent: {}
+[22.990914] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/include/delivery_mission_interfaces/delivery_mission_interfaces/action/detail/delivery_mission__rosidl_typesupport_introspection_cpp.hpp\n'}
+[23.066632] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[23.075766] (-) TimerEvent: {}
+[23.176014] (-) TimerEvent: {}
+[23.188700] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[23.215094] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_cpp.so\n'}
+[23.276129] (-) TimerEvent: {}
+[23.323489] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[23.331156] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/environment/pythonpath.sh\n'}
+[23.344683] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/environment/pythonpath.dsv\n'}
+[23.364190] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces-0.0.0-py3.12.egg-info\n'}
+[23.364308] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[23.376203] (-) TimerEvent: {}
+[23.405516] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[23.458313] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[23.476313] (-) TimerEvent: {}
+[23.513459] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[23.565165] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces\n'}
+[23.576414] (-) TimerEvent: {}
+[23.579554] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/_delivery_mission_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[23.633914] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/_delivery_mission_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[23.676461] (-) TimerEvent: {}
+[23.693586] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/action\n'}
+[23.705257] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/action/_delivery_mission.py\n'}
+[23.776553] (-) TimerEvent: {}
+[23.790120] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/action/__init__.py\n'}
+[23.844192] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/action/_delivery_mission_s.c\n'}
+[23.876645] (-) TimerEvent: {}
+[23.901642] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/_delivery_mission_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[23.963490] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[23.976729] (-) TimerEvent: {}
+[24.027311] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_c.so\n'}
+[24.076845] (-) TimerEvent: {}
+[24.093269] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[24.166384] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/__init__.py\n'}
+[24.176948] (-) TimerEvent: {}
+[24.277291] (-) TimerEvent: {}
+[24.310483] (delivery_mission_interfaces) StdoutLine: {'line': b"Listing '/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces'...\n"}
+[24.310726] (delivery_mission_interfaces) StdoutLine: {'line': b"Listing '/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/action'...\n"}
+[24.310788] (delivery_mission_interfaces) StdoutLine: {'line': b"Compiling '/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/action/__init__.py'...\n"}
+[24.310848] (delivery_mission_interfaces) StdoutLine: {'line': b"Compiling '/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/action/_delivery_mission.py'...\n"}
+[24.335395] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[24.377419] (-) TimerEvent: {}
+[24.413404] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[24.440727] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[24.477533] (-) TimerEvent: {}
+[24.523395] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[24.550999] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_c.so\n'}
+[24.577634] (-) TimerEvent: {}
+[24.633657] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/python3.12/site-packages/delivery_mission_interfaces/delivery_mission_interfaces_s__rosidl_typesupport_c.so" to ""\n'}
+[24.643173] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_generator_py.so\n'}
+[24.677720] (-) TimerEvent: {}
+[24.733890] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/lib/libdelivery_mission_interfaces__rosidl_generator_py.so" to ""\n'}
+[24.745393] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/ament_index/resource_index/rust_packages/delivery_mission_interfaces\n'}
+[24.755300] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/rust\n'}
+[24.789765] (-) TimerEvent: {}
+[24.802909] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/rust/src\n'}
+[24.803027] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/rust/src/lib.rs\n'}
+[24.843166] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/rust/src/action\n'}
+[24.870032] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/rust/src/action/rmw.rs\n'}
+[24.889876] (-) TimerEvent: {}
+[24.949653] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/rust/src/action.rs\n'}
+[24.989996] (-) TimerEvent: {}
+[25.035295] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/rust/Cargo.toml\n'}
+[25.090146] (-) TimerEvent: {}
+[25.112379] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/rust/build.rs\n'}
+[25.179808] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/action/DeliveryMission.idl\n'}
+[25.190304] (-) TimerEvent: {}
+[25.267588] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/action/DeliveryMission.action\n'}
+[25.290427] (-) TimerEvent: {}
+[25.338543] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/ament_index/resource_index/package_run_dependencies/delivery_mission_interfaces\n'}
+[25.349689] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/ament_index/resource_index/parent_prefix_path/delivery_mission_interfaces\n'}
+[25.390548] (-) TimerEvent: {}
+[25.417581] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/environment/ament_prefix_path.sh\n'}
+[25.428110] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/environment/ament_prefix_path.dsv\n'}
+[25.448212] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/environment/path.sh\n'}
+[25.491343] (-) TimerEvent: {}
+[25.511670] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/environment/path.dsv\n'}
+[25.538192] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/local_setup.bash\n'}
+[25.606446] (-) TimerEvent: {}
+[25.629813] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/local_setup.sh\n'}
+[25.634989] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/local_setup.zsh\n'}
+[25.649238] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/local_setup.dsv\n'}
+[25.649338] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Installing: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/package.dsv\n'}
+[25.668915] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/ament_index/resource_index/packages/delivery_mission_interfaces\n'}
+[25.682823] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/export_delivery_mission_interfaces__rosidl_generator_cExport.cmake\n'}
+[25.705522] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/export_delivery_mission_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[25.705581] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/export_delivery_mission_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[25.705620] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/export_delivery_mission_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[25.722719] (-) TimerEvent: {}
+[25.763123] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/delivery_mission_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[25.780705] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/delivery_mission_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[25.820084] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/delivery_mission_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[25.853358] (-) TimerEvent: {}
+[25.882897] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/delivery_mission_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[25.897264] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/export_delivery_mission_interfaces__rosidl_generator_cppExport.cmake\n'}
+[25.902827] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/export_delivery_mission_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[25.936511] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/export_delivery_mission_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[25.979986] (-) TimerEvent: {}
+[25.991383] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/delivery_mission_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[26.008677] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/delivery_mission_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[26.034067] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/delivery_mission_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[26.042352] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/delivery_mission_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[26.049244] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/export_delivery_mission_interfaces__rosidl_generator_pyExport.cmake\n'}
+[26.049341] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/export_delivery_mission_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[26.049390] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[26.083920] (-) TimerEvent: {}
+[26.084010] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[26.096285] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[26.129398] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[26.160854] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[26.194667] (-) TimerEvent: {}
+[26.207365] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[26.226030] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[26.245355] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[26.260754] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/delivery_mission_interfacesConfig.cmake\n'}
+[26.289071] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/cmake/delivery_mission_interfacesConfig-version.cmake\n'}
+[26.289192] (delivery_mission_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_interfaces/share/delivery_mission_interfaces/package.xml\n'}
+[26.289244] (delivery_mission_interfaces) CommandEnded: {'returncode': 0}
+[26.297379] (-) TimerEvent: {}
+[26.409814] (-) TimerEvent: {}
+[26.510024] (-) TimerEvent: {}
+[26.610245] (-) TimerEvent: {}
+[26.710559] (-) TimerEvent: {}
+[26.804022] (delivery_mission_interfaces) JobEnded: {'identifier': 'delivery_mission_interfaces', 'rc': 0}
+[26.829006] (-) TimerEvent: {}
+[26.829168] (-) EventReactorShutdown: {}
