@@ -1,5 +1,0 @@
-  File "/root/workspaces/turtlebot_delivery_norasheikhly/install/delivery_mission_controller/lib/python3.12/site-packages/delivery_mission_controller/delivery_mission_server_node.py", line 139
-    else:
-    ^^^^
-SyntaxError: invalid syntax
-
