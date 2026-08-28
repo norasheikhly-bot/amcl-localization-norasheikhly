@@ -1,235 +1,186 @@
-# Step1:
-        # Configure the URDF visualizer to find th erobot package and display the robot
-        # open VS to install JSON workspace and add
-        {
-        "urdf-visualizer.packages": {
-            "robot_description": "/root/workspaces/robot_description_norasheikhly/src/robot_description"
-        }
-        }
-# Step2:
-        # Create workspace robot_description_norasheikhly and src by using mkdir -p
-        # Under src create the robot_description pkg by pkg create of cmake type
-# Step3: 
-        # create the urdf folder under the robot_description
-        # under urdf create the file robot.urdf.xacro by touch command
-# Step4: Xacro Code
-        # Fill the robot.urdf.xacro with the following command:
+Two-Wheel Differential Drive Robot
 
-        #XML declaration (Elements: version, name, tags)
-        
-<?xml version="1.0"?>
-<robot name="two_wheel_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">        
+Project Overview
 
-        # Add Robot properties: base dimensions,wheel dimensions and radius and offset: wheel displacement 
+This project contains a URDF/Xacro description of a simple two-wheel differential drive robot.
 
-<xacro:property name="base_length" value="0.6"/>
-<xacro:property name="base_width" value="0.4"/>
-<xacro:property name="base_height" value="0.2"/>
-<xacro:property name="base_mass" value="5.0"/>
+The robot is designed with:
 
-<xacro:property name="wheel_radius" value="0.1"/>
-<xacro:property name="wheel_width" value="0.05"/>
-<xacro:property name="wheel_mass" value="0.5"/>
+- One "base_link" as the main body of the robot.
+- Two driving wheels: left and right.
+- One rear caster wheel for support and balance.
+- The two driving wheels are created using a reusable Xacro macro.
+- The caster wheel is defined separately because it is a single component with a different function.
 
-<xacro:property name="wheel_x_offset" value="0.2"/>
-<xacro:property name="wheel_y_offset" value="0.225"/>
-<xacro:property name="wheel_z_offset" value="-0.05"/>
+The robot can be visualized using the URDF Visualizer to check the robot structure, wheel placement, caster position, LiDAR and camera position.
 
-        # added wheel size to be able to change the radius
-<xacro:property name="caster_wheel_radius" value="0.09"/>
-<xacro:property name="caster_wheel_width" value="0.04"/>
+Robot Structure
 
+The main robot structure is:
 
-        #Add base_link: create the robot body by specifying the visual collision and inertia 
-        
-<link name="base_link">
-  <visual>
-    <geometry>
-      <box size="${base_length} ${base_width} ${base_height}"/>
-    </geometry>
+                  base_link
+                 /     |     \
+                
+      left_wheel  right_wheel  caster_wheel
+                              
 
-    <material name="chassis_color">
-      <color rgba="0.1 0.5 0.8 1.0"/>
-    </material>
-  </visual>
+Base Link
 
-  <collision>
-    <geometry>
-      <box size="${base_length} ${base_width} ${base_height}"/>
-    </geometry>
-  </collision>
+"base_link" represents the main body of the robot.
 
-  <inertial>
-    <mass value="${base_mass}"/>
+Base footprint
 
-    <origin xyz="0 0 0" rpy="0 0 0"/>
+"base_footprint" represents the reference point located at the ground level of the robot.
 
-    <inertia
-      ixx="${(1/12) * base_mass * (base_width*base_width + base_height*base_height)}"
-      ixy="0.0"
-      ixz="0.0"
-      iyy="${(1/12) * base_mass * (base_length*base_length + base_height*base_height)}"
-      iyz="0.0"
-      izz="${(1/12) * base_mass * (base_length*base_length + base_width*base_width)}"/>
-  </inertial>
-</link>
-        
-        # Add base_footprint to link the robot to ground 
+Driving Wheels
 
-<link name="base_footprint"/>
+The robot has two mobile driving wheels (type:continuous):
 
-        # Link the base_footprint to the base_link with a distance of 15cm between them
-        
-<joint name="base_footprint_joint" type="fixed">
-  <parent link="base_footprint"/>
-  <child link="base_link"/>
-  <origin xyz="0 0 0.15" rpy="0 0 0"/>
-</joint>
+- "front_left" — left driving wheel
+- "front_right" — right driving wheel
 
-        
-        # Add joints specify (parent, child, origin, axis, limit) 
+Both driving wheels use the same Xacro "wheel" macro because they are repeated components with the same geometry and structure.
 
-        #create a function Macro file and define the joint instead of repeating same code for 3 wheels used
+Caster Wheel
 
-<xacro:macro name="wheel" params="prefix x_reflect y_reflect">
+The caster wheel is a small spherical support underneath the rear of the robot.
 
-</xacro:macro>
-         
-         #Add wheel joint inside macro
+Unlike the driving wheels, the caster is defined separately because it is only used once and does not require the same Xacro macro.
 
-<joint name="${prefix}_wheel_joint" type="continuous">
-  <parent link="base_link"/>
-  <child link="${prefix}_wheel_link"/>
+The caster is connected to "base_link" using a fixed joint:
 
-  <origin
-    xyz="${x_reflect * wheel_x_offset} ${y_reflect * wheel_y_offset} ${wheel_z_offset}"
-    rpy="0 0 0"/>
+                        base_footprint
+                            | 
+                            |
+                        base_link
+                       /     |       \
+                      /  fixed-joint  \
+                     /       ↓         \
+         left_wheel       caster_wheel   right_wheel
+          |                  |                     | 
+  cylinder geometry          | sphere geometry     cylinder geometry
 
-  <axis xyz="0 1 0"/>
-</joint>
+The caster provides support and balance for the robot, no motion modeled for this caster wheel.
 
+Folder Structure
 
-        #add wheel link (visual collision inertia) under the joint:
+The project is organized as follows:
 
-        <link name="${prefix}_wheel_link">
-  <visual>
-    <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+robot_description_norasheikhly/
+│
+├── src/
+│ └── robot_description/
+│      ├── urdf/
+│      │     └── robot.urdf.xacro
+│      │ 
+│      │
+│      ├── meshes/
+│      │    └── lidar.STL
+│      │    └── zed.stl
+│      ├── package.xml
+│      └── CMakeLists.txt
+│
+├── README.md/images
+│ ├── robot preview 1.png
+│ └── robot preview 2.png
+│
+└── README.md
 
-    <geometry>
-      <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
-    </geometry>
+Xacro Structure
 
-    <material name="wheel_color">
-      <color rgba="0.1 0.1 0.1 1.0"/>
-    </material>
-  </visual>
+The reusable components used:
+The driving wheels are defined using a reusable Xacro macro. This avoids repeating the same wheel definition twice.
 
-  <collision>
-    <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+The two wheels are created as:
 
-    <geometry>
-      <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
-    </geometry>
-  </collision>
+<xacro:wheel prefix="front_left" x_reflect="1" y_reflect="1"/>
 
-  <inertial>
-    <mass value="${wheel_mass}"/>
+<xacro:wheel prefix="front_right" x_reflect="1" y_reflect="-1"/>
 
-    <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
+The fixed component not under Xacro:
+The caster wheel is defined separately as a sphere and connected to "base_link" using a fixed joint.
 
-    <inertia
-      ixx="${(1/12) * wheel_mass * (3*wheel_radius*wheel_radius + wheel_width*wheel_width)}"
-      ixy="0.0"
-      ixz="0.0"
-      iyy="${(1/12) * wheel_mass * (3*wheel_radius*wheel_radius + wheel_width*wheel_width)}"
-      iyz="0.0"
-      izz="${(1/2) * wheel_mass * (wheel_radius*wheel_radius)}"/>
-  </inertial>
-</link>
+The xacro file structure:
+1. define the elements: xml version, robot attribute-name and xmls:xacro to use xacro properties and macro
+2. define mesh to be able to use mesh files
+3. Properties: Base and Wheel
+4. Add base link 
+                |___ Visual: Box size and color blue 
+                |___ Collision
+                |___ inertia
+5. Add base footprint 15cm away from base link
+6. Add Wheel link:
+                |___ Visual: cylinder (radius, ength) and color black
+                |___ Collision
+                |___ inertia
+   Caster wheel link (not under xacro file)               
+                |___ Visual: sphere (radius) and color black
+                |___ Collision
+                |___ inertia
+7. Wheel joint: continuous (under xacro/macro)          
+                |___ parent: base link
+                |___ child: wheel link
+                |___ origin 
+                |___ axis
+8. Caster Joint: fixed (not under xacro/macro)          
+                |___ parent: base link
+                |___ child: caster wheel
+                |___ origin 
+                |___ axis
+9. Call Xacro dunction of the 2 wheels
+10. Add LiDAR Link (mesh file)
+11. Add camera Link (mesh file)
 
-        #create the two wheels in front and caster wheel in the back middle distance:
+Building the robot:
+Creat and Navigate to the workspace:
+robot_description-norasheikhly (cd ~/workspaces
+mkdir -p robot_description-norasheikhly/src)
+   |___src
+     |___robot_description pkg (ros2 pkg create --build-type ament cmake robot_description)
+       |__ urdf (mkdir)
+       | |__ robot_description.urdf.xacro (touch) fill code (nano)
+       |
+       |__ meshes (mkdir) 
+       | |__ camera.stl (drag & drop)
+       | |__ lidar.STL (drag & drop)
+       |
+       |__CMakeLists.txt (Modify from VS to copy the mesh files to the package and be seen and loaded) and (update robot.urdf.xacro with new data of the meshes)
 
-<xacro:wheel prefix="front_left"  x_reflect="1" y_reflect="1" wheel_radius="${wheel_radius}" wheel_width="${wheel_width}"/>
-  <xacro:wheel prefix="front_right" x_reflect="1" y_reflect="-1" wheel_radius="${wheel_radius}" wheel_width="${wheel_width}"/>
-  <xacro:wheel prefix="caster_wheel"   x_reflect="-1" y_reflect="0" wheel_radius="${caster_wheel_radius}" wheel_width="${caster_wheel_width}"/> #back middle
+Build the package:
+colcon build
+After building, source the workspace:
+source install/setup.bash
 
-</robot>
+Previewing the Robot
+The robot can be previewed using the URDF Visualizer.
 
-# Step5: Mesh files
-      # create mesh file under robot_description called meshes
-      # drag and drop LiDAR and camera .stl files
-      # can see the LiDAR and Camera by mesh viewer
+The visualizer can be used to verify:
+- The robot body.
+- The left driving wheel.
+- The right driving wheel.
+- The rear caster wheel.
+- The position and alignment of the wheels.
+- The caster touching the same ground level as the driving wheels.
 
+Robot Preview
 
-      #Modify CMakeLists.txt so all mesh files are copied into the package and can be visualized
-install(
-  DIRECTORY urdf meshes
-  DESTINATION share/${PROJECT_NAME}
-)
+The following image shows the complete robot in the URDF Visualizer (side view).
+![alt text](robot_preview1-1.png)
 
-       #Modify the .xacro file by adding the mesh path 
-       <xacro:arg name="mesh_path" default="package://robot_description/meshes/"/>
+An additional front view of the robot with collision
+![alt text](robot_preview2.png)
 
-       #add the lidar link and camera in the .xacro file also
-<link name="lidar_link">
-  <visual>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="$(arg mesh_path)lidar.STL"/>
-    </geometry>
-    <material name="lidar_gray">
-    <color rgba="0.6 0.6 0.6 1.0"/>
-    </material>
-  </visual>
-  <collision>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-    <geometry>
-      <cylinder radius="0.06" length="0.04"/>
-    </geometry>
-  </collision>
-  <inertial>
-    <mass value="0.2"/>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-    <inertia ixx="0.0001" ixy="0.0" ixz="0.0"
-             iyy="0.0001" iyz="0.0"
-             izz="0.0001"/>
-  </inertial>
-</link>
-
-<joint name="lidar_joint" type="fixed">
-  <parent link="base_link"/>
-  <child link="lidar_link"/>
-  <origin xyz="0.2 0 0.13" rpy="0 0 0"/>
-</joint>
-
-<link name="camera_link">
-  <visual>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="$(arg mesh_path)zed.stl"/>
-    </geometry>
-    <material name="camera_black">
-      <color rgba="0.5 0.5 0.5 1.0"/>
-    </material>
-  </visual>
-  <collision>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-    <geometry>
-      <box size="0.08 0.03 0.03"/>
-    </geometry>
-  </collision>
-  <inertial>
-    <mass value="0.1"/>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-    <inertia ixx="0.00005" ixy="0.0" ixz="0.0"
-             iyy="0.00005" iyz="0.0"
-             izz="0.00005"/>
-  </inertial>
-</link>
-
-<joint name="camera_joint" type="fixed">
-  <parent link="base_link"/>
-  <child link="camera_link"/>
-  <origin xyz="0.3 0 0.08" rpy="0 0 0"/>
-</joint>
+Assignment Requirements
+This project includes:
+- A "base_link".
+- Two mobile/driving wheels.
+- A caster wheel in addition to the two mobile wheels.
+- Reusable Xacro macro for the repeated driving wheels.
+- A separately defined spherical caster.
+- A fixed joint connecting the caster to "base_link".
+- LiDAR sensor placed on the top middle front of the robot
+- Camera sensor placed in the front side of the chasis.
+- A README explaining the project and robot structure.
+- Instructions for building and previewing the robot.
+- Screenshots of the robot visualization.
 
