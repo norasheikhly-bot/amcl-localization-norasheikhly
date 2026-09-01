@@ -5,6 +5,7 @@
   <xacro:property name="pi" value="3.141592653589793"/>
 
   <xacro:arg name="mesh_path" default="package://robot_description/meshes/"/>
+  <xacro:include filename="$(find robot_description)/urdf/robot.gazebo.xacro"/>
 
   <!-- Base properties -->
   <xacro:property name="base_length" value="0.6"/>
@@ -89,7 +90,20 @@
           izz="${(1/2) * wheel_mass * (wheel_radius*wheel_radius)}"/>
       </inertial>
     </link>
-  <!-- Caster Wheel link -->
+
+    <!-- Wheel joint -->
+    <joint name="${prefix}_wheel_joint" type="continuous">
+      <parent link="base_link"/>
+      <child link="${prefix}_wheel_link"/>
+      <origin
+        xyz="${x_reflect * wheel_x_offset} ${y_reflect * wheel_y_offset} ${wheel_z_offset}"
+        rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+    </joint>
+
+    </xacro:macro>
+
+    <!-- Caster Wheel link -->
     <link name="caster_wheel">
       <visual>
         <geometry>
@@ -117,18 +131,6 @@
       </inertial>
     </link>
 
-    <!-- Wheel joint -->
-    <joint name="${prefix}_wheel_joint" type="continuous">
-      <parent link="base_link"/>
-      <child link="${prefix}_wheel_link"/>
-      <origin
-        xyz="${x_reflect * wheel_x_offset} ${y_reflect * wheel_y_offset} ${wheel_z_offset}"
-        rpy="0 0 0"/>
-      <axis xyz="0 1 0"/>
-    </joint>
-
-    </xacro:macro>
-
 <!-- Caster joint -->
     <joint name="caster_joint" type="fixed">
       <parent link="base_link"/>
@@ -137,16 +139,19 @@
         xyz="-0.15 0 -0.12"
         rpy="0 0 0"/>
     </joint>
-    
-  
 
+  <!-- Gazebo friction properties-Caster wheel -->  
+  <gazebo reference = "caster_wheel">
+   <mu1>0.0</mu1>
+   <mu2>0.0</mu2>
+   <kp>1000000.0</kp>
+   <kd>100.0</kd>
+  </gazebo>
 
   <!-- Instantiate wheels: front left, front right, and caster in the back -->
   <xacro:wheel prefix="front_left"  x_reflect="1" y_reflect="1"/>
   <xacro:wheel prefix="front_right" x_reflect="1" y_reflect="-1"/>
   
-
-
   <!-- LiDAR link -->
   <link name="lidar_link">
     <visual>
